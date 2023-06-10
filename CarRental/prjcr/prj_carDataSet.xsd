@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="prj_carDataSet" targetNamespace="http://tempuri.org/prj_carDataSet.xsd" xmlns:mstns="http://tempuri.org/prj_carDataSet.xsd" xmlns="http://tempuri.org/prj_carDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="String" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="String (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.prjcr.Properties.Settings.GlobalReference.Default.String" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="adminTableAdapter" GeneratorDataComponentClassName="adminTableAdapter" Name="admin" UserDataComponentName="adminTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="String (Settings)" DbObjectName="prj_car.admin" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `username`, `password` FROM `admin`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="carTableAdapter" GeneratorDataComponentClassName="carTableAdapter" Name="car" UserDataComponentName="carTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="String (Settings)" DbObjectName="prj_car.car" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `car_id`, `car_name`, `car_no`, `color`, `rent`, `status` FROM `car`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="custTableAdapter" GeneratorDataComponentClassName="custTableAdapter" Name="cust" UserDataComponentName="custTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="String (Settings)" DbObjectName="prj_car.cust" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `cust_id`, `cust_name`, `age`, `ph_no`, `add`, `cfn` FROM `cust`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rentTableAdapter" GeneratorDataComponentClassName="rentTableAdapter" Name="rent" UserDataComponentName="rentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="String (Settings)" DbObjectName="prj_car.rent" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `car_id`, `cust_id`, `cust_name`, `rent`, `no_days`, `hire_date`, `ph_no`, `totalrent`, `cfn` FROM `rent`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="prj_carDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="prj_carDataSet" msprop:Generator_UserDSName="prj_carDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="admin" msprop:Generator_TableClassName="adminDataTable" msprop:Generator_TableVarName="tableadmin" msprop:Generator_TablePropName="admin" msprop:Generator_RowDeletingName="adminRowDeleting" msprop:Generator_RowChangingName="adminRowChanging" msprop:Generator_RowEvHandlerName="adminRowChangeEventHandler" msprop:Generator_RowDeletedName="adminRowDeleted" msprop:Generator_UserTableName="admin" msprop:Generator_RowChangedName="adminRowChanged" msprop:Generator_RowEvArgName="adminRowChangeEvent" msprop:Generator_RowClassName="adminRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="car" msprop:Generator_TableClassName="carDataTable" msprop:Generator_TableVarName="tablecar" msprop:Generator_TablePropName="car" msprop:Generator_RowDeletingName="carRowDeleting" msprop:Generator_RowChangingName="carRowChanging" msprop:Generator_RowEvHandlerName="carRowChangeEventHandler" msprop:Generator_RowDeletedName="carRowDeleted" msprop:Generator_UserTableName="car" msprop:Generator_RowChangedName="carRowChanged" msprop:Generator_RowEvArgName="carRowChangeEvent" msprop:Generator_RowClassName="carRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cust" msprop:Generator_TableClassName="custDataTable" msprop:Generator_TableVarName="tablecust" msprop:Generator_TablePropName="cust" msprop:Generator_RowDeletingName="custRowDeleting" msprop:Generator_RowChangingName="custRowChanging" msprop:Generator_RowEvHandlerName="custRowChangeEventHandler" msprop:Generator_RowDeletedName="custRowDeleted" msprop:Generator_UserTableName="cust" msprop:Generator_RowChangedName="custRowChanged" msprop:Generator_RowEvArgName="custRowChangeEvent" msprop:Generator_RowClassName="custRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rent" msprop:Generator_TableClassName="rentDataTable" msprop:Generator_TableVarName="tablerent" msprop:Generator_TablePropName="rent" msprop:Generator_RowDeletingName="rentRowDeleting" msprop:Generator_RowChangingName="rentRowChanging" msprop:Generator_RowEvHandlerName="rentRowChangeEventHandler" msprop:Generator_RowDeletedName="rentRowDeleted" msprop:Generator_UserTableName="rent" msprop:Generator_RowChangedName="rentRowChanged" msprop:Generator_RowEvArgName="rentRowChangeEvent" msprop:Generator_RowClassName="rentRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
