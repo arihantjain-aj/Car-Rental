@@ -22,7 +22,7 @@ Screenshots
 ![image](https://github.com/arihantjain-aj/Car-Rental/assets/121403074/d54be965-d9cb-4079-82ca-2adeb3636c68)
 
 
-4. Main form
+4.Main form
 ![image](https://github.com/arihantjain-aj/Car-Rental/assets/121403074/1ea0ad2d-d829-48cf-96db-fab3a978b496)
  
  
