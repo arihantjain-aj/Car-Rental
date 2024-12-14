@@ -1,14 +1,19 @@
 # Car-Rental
 
 
-NOT FOR COMMERCIAL PURPOSE
 
-This Is Car rental Minor Project. 
-Tools Used Visual Studio 2019 (C# .net) , Mysql Database. 
-Default location to Run this Project is C:/ (drive)
-With Database File prj_car.sql
+A minor project developed for Windows using Visual Studio 2019 (C# .NET) with XAMPP MySQL as the backend database, designed to demonstrate a functional car rental management application.<br>
 
-Screenshots
+
+Key features include:<br>
+• Car Management: Add and manage car details in the system.<br>
+• Admin and Customer Management: Easily add admin users and customers for streamlined operations.<br>
+• Rental Operations: Rent out cars to customers with a simple and efficient process.<br>
+• CRUD Functionality: Perform Create, Read, Update, and Delete operations for cars, admins, and customers.<br>
+
+This project showcases a straightforward and practical approach to building a car rental system with core functionalities, ideal for desktop environments.<br>
+
+## Screenshots
 
 1.Loading form
 ![image](https://github.com/arihantjain-aj/Car-Rental/assets/121403074/07ab7ca3-6fb0-4618-b302-0baee55ec798)
